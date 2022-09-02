@@ -2,13 +2,13 @@ import React, {ChangeEvent, useState, useEffect} from 'react';
 import { Grid, Typography, TextField, Button} from '@material-ui/core';
 import {Link, useNavigate} from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import { api } from '../../services/Service';
+import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import {Box} from '@mui/material';
 import './Login.css';
 
 function Login(){
-    let history = useNavigate();
+    let navigate = useNavigate();
     
     const [token, setToken] = useLocalStorage('token');
 
@@ -33,15 +33,14 @@ function Login(){
 
                 useEffect(()=>{
                     if(token != ''){
-                        history('/home')
+                        navigate('/home')
                     }
                 }, [token])
 
         async function onSubmit(e: ChangeEvent<HTMLFormElement>){
             e.preventDefault();
                 try{
-                    const resposta = await api.post(`/usuarios/logar`, userLogin)
-                    setToken(resposta.data.token)
+                   await login(`/usuarios/logar`, userLogin, setToken)
 
                     alert('Usuário logado com sucesso!');
                 }catch(error){
