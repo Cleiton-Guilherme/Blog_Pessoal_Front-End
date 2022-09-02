@@ -8,6 +8,7 @@ import Footer from './components/estaticos/footer/Footer';
 import Home from './paginas/home/Home';
 import Login from './paginas/Login/Login';
 import './App.css';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -15,10 +16,15 @@ function App() {
     <Router>
       <Navbar />
       <div style={{ minHeight: '100vh' }}>
+
         <Routes> // Antigo Switch
+
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
+
+          <Route path="/cadastrousuario" element={<CadastroUsuario />} />
+
         </Routes>
       </div>
       <Footer />
