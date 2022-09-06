@@ -8,10 +8,14 @@ import {Box} from '@mui/material';
 import './Login.css';
 
 function Login(){
+
+    //Redireciona o usuário para determinada página
     let navigate = useNavigate();
     
+    // Hooks que vão manipular o nosso local Storage para gravar o Token
     const [token, setToken] = useLocalStorage('token');
 
+    // useStage define como uma determinada variável será inicializada quando o comp for renderizar
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,

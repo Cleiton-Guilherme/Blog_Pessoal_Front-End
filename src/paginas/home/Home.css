@@ -1,15 +1,17 @@
 .caixa{
-    background-color: #3F51B5;
+  background: radial-gradient(circle, rgba(107,105,101,1) 50%, rgba(50,55,55,1) 100%);
 }
+
 
 .titulo{
   color: white !important;
   font-weight: "bold" !important;
 }
+
 .botao{
 
  border-color: white !important;
- background-color: #3F51B5;
+ background-color: black;
   color: white !important;
 }
 
