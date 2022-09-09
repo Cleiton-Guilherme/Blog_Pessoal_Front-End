@@ -4,14 +4,18 @@ background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba
 }
 
 .box2{
-    background: radial-gradient(circle, rgba(107,105,115,1) 0%, rgba(40,45,55,1) 100%);
+     background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014)
+      100%);;
+      font-size: 90px;
 }
 
 
 .redes{
     font-size: 60px;
-     color: white;
+     color: rgb(255, 255, 255);
 }
 .textos{
      color: white;
 }
+
+

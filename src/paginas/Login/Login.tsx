@@ -1,19 +1,21 @@
 import React, {ChangeEvent, useState, useEffect} from 'react';
 import { Grid, Typography, TextField, Button} from '@material-ui/core';
 import {Link, useNavigate} from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import {Box} from '@mui/material';
 import './Login.css';
+import { useDispatch } from 'react-redux';
+import { addToken } from '../../store/tokens/actions';
 
 function Login(){
 
     //Redireciona o usuário para determinada página
     let navigate = useNavigate();
+    const dispatch = useDispatch();
     
     // Hooks que vão manipular o nosso local Storage para gravar o Token
-    const [token, setToken] = useLocalStorage('token');
+    const [token, setToken] = useState('');
 
     // useStage define como uma determinada variável será inicializada quando o comp for renderizar
     const [userLogin, setUserLogin] = useState<UserLogin>(
@@ -37,6 +39,7 @@ function Login(){
 
                 useEffect(()=>{
                     if(token != ''){
+                        dispatch(addToken(token));
                         navigate('/home')
                     }
                 }, [token])
@@ -63,7 +66,8 @@ function Login(){
                     <TextField value={userLogin.usuario} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                     <TextField value={userLogin.senha} onChange={(e:ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                     <Box marginTop={2} textAlign='center'>
-                            <Button type='submit' variant='contained' color='primary'>
+
+                            <Button type='submit' variant='contained' color='primary' >
                                 Logar
                             </Button>
                     </Box>
