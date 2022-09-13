@@ -9,5 +9,5 @@
 
 .bg-nav{
     background: rgb(red, green, blue);
-    background: radial-gradient(circle, rgba(107,105,101,1) 0%, rgba(59,55,55,1) 50%);
+    background: radial-gradient(circle, rgba(107,105,101,1) 0%, rgba(59,55,55,1) 100%);
 }

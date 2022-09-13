@@ -1,3 +1,12 @@
 .titulo{
     font-weight: bold;
 }
+
+.caixa{
+    background: rgb(37, 36, 34);
+  background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014) 100%);
+
+}
+.MuiAppBar-colorPrimary{
+    background-color: aqua;
+}
