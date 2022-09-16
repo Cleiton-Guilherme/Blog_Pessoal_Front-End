@@ -1,11 +1,11 @@
 .box1{
-     background: rgb(37, 36, 34);
-background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014) 78%);
+     background: rgb(7, 5, 0);
+background: linear-gradient(80deg, rgba(14, 10, 3, 0.768) 0%, rgba(16,26,32,0.87718837535014) 78%);
 }
 
 .box2{
-     background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014)
-      100%);;
+     background: rgb(7, 5, 0);
+     background: linear-gradient(80deg, rgba(14, 10, 3, 0.768) 0%, rgba(16,26,32,0.87718837535014) 100%);
       font-size: 90px;
 }
 

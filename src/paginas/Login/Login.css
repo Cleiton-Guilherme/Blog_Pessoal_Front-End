@@ -11,4 +11,19 @@
     background-size: cover;
     background-position: center;
 }
+.bg-login{
+    background: rgb(red, green, blue);
+    background: radial-gradient(circle, rgb(107, 101, 102) 0%, rgba(59,55,55,1) 100%);
+}
+
+.login-esquerda{
+    border-radius: 60px;
+    background: radial-gradient(circle, rgba(163,160,160,0) 0%, rgba(149,139,139,0.6222864145658263) 100%);
+}
+
+.botao{
+    border-radius:30px;
+    background: radial-gradient(circle, #353ec400 0%, rgba(0, 0, 0, 0.622) 100%);
+}
+
 
