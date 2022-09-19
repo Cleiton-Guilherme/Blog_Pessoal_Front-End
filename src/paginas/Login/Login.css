@@ -3,6 +3,11 @@
 
 }
 
+.textos2{
+    text-decoration: none;
+    
+}
+
 .imagem {
     background-image: url(https://cdn.pixabay.com/photo/2015/10/02/15/00/diary-968592_960_720.jpg);
     background-repeat: no-repeat;
@@ -13,17 +18,22 @@
 }
 .bg-login{
     background: rgb(red, green, blue);
-    background: radial-gradient(circle, rgb(107, 101, 102) 0%, rgba(59,55,55,1) 100%);
+    background: linear-gradient(40deg, rgb(50, 52, 165) 20%, rgba(101, 193, 244, 1) 40%);
 }
 
 .login-esquerda{
-    border-radius: 60px;
-    background: radial-gradient(circle, rgba(163,160,160,0) 0%, rgba(149,139,139,0.6222864145658263) 100%);
+    width: 60vw;
+    min-height: 50vh;
+    width: 60vh;
+    border-radius: 100px;
+    background: radial-gradient(circle, rgba(101, 193, 244, 1) 40%);
 }
 
 .botao{
     border-radius:30px;
-    background: radial-gradient(circle, #353ec400 0%, rgba(0, 0, 0, 0.622) 100%);
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
+
 
 

@@ -1,3 +1,9 @@
 .text-decorator-none{
     text-decoration: none;
+    
+}
+
+.fundo{
+    background: rgb(red, green, blue);
+    background: linear-gradient(40deg, rgb(50, 52, 165) 20%, rgba(101, 193, 244, 1) 40%);
 }

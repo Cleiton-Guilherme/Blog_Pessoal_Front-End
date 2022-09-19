@@ -38,7 +38,8 @@ function Footer() {
                 </Box>
                 <Box>
                     <a target="_blank" href="https://brasil.generation.org">
-                        <Typography variant="subtitle2" gutterBottom className='textos' align="center">brasil.generation.org</Typography>
+                        <Typography variant="subtitle2" gutterBottom className='textos' align="center" style=
+                                {{ fontWeight: 'bold', cursor: "pointer" }}>brasil.generation.org</Typography>
                     </a>
                 </Box>
             </Box>

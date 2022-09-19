@@ -4,7 +4,7 @@ import './CadastroTema.css';
 import Tema from '../../../models/Tema';
 import { useNavigate, useParams } from 'react-router-dom';
 import { buscaId, post, put } from '../../../services/Service';
-import { backdropClasses } from '@mui/material';
+import { backdropClasses, Box } from '@mui/material';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
@@ -103,6 +103,7 @@ function CadastroTema() {
 
   
     return (
+        <Box className='cor'>
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
@@ -112,6 +113,7 @@ function CadastroTema() {
                 </Button>
             </form>
         </Container>
+        </Box>
     )
 }
 

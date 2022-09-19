@@ -1,10 +1,10 @@
-.caixa{
-  background: #05021863;
-  background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014) 100%);
+.container{
+  background: rgb(red, green, blue);
+  background: linear-gradient(40deg, rgba(6, 60, 121, 0.89) 60%, rgba(6, 124, 170, 0.74) 80%);
 }
 
 
-.titulo{
+.titulo1{
   color: white !important;
   font-weight: "bold" !important;
 }
@@ -18,7 +18,7 @@
 
 .postagens{
   background: #05021863;
-  background: linear-gradient(80deg, rgba(37, 36, 34, 0.7679446778711485) 0%, rgba(16,26,32,0.87718837535014) 100%);
+  background: linear-gradient(80deg, rgba(187, 11, 11, 0.836) 0%, rgba(53, 29, 185, 0.877) 100%);
 
 }
 
